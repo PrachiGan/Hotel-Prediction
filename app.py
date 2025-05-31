@@ -4,8 +4,8 @@ import pandas as pd
 import streamlit as st
 import pickle 
 
-with open('final_model.pkl','rb') as file:
-    model=pickle.load(file)
+with open('final_model.joblib','rb') as file:
+    model=joblib.load(file)
     
 with open ('transformer.pkl','rb') as file:
     transformer=pickle.load(file)
